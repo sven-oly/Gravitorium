@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Sensorium"
+    android:id="@+id/bdgView"
+    >
+
+    <TextView
+        android:id="@+id/mheading"
+        android:text="@string/hello_world"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:text="Gravity x:"
+        android:id="@+id/gravX"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/mheading"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_text_size_large_material" />
+    <TextView
+        android:text="Gravity y:"
+        android:id="@+id/gravY"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/gravX"
+        android:layout_alignParentEnd="false"
+        android:textSize="@dimen/abc_text_size_large_material" />
+    <TextView
+        android:text="Gravity z:"
+        android:id="@+id/gravZ"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/gravY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_text_size_large_material" />
+
+    <ImageView
+        android:id="@+id/colorBox"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/gravZ" />
+
+</RelativeLayout>
